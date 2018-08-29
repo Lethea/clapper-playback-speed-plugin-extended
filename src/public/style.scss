@@ -1,0 +1,81 @@
+/**
+ * 1. Pump up specificity to override default clappr styles.
+ */
+.playback-speed[class] { /* [1] */
+    float: right;
+    height: 100%;
+    line-height: 32px;
+    margin: 0 6px;
+    position: relative;
+}
+
+    /**
+    * Playback speed controls
+    */
+    .playback-speed__btn {
+        background: none;
+        border: none;
+        color: #fff;
+        display: inline-block;
+        font-family: inherit;
+        font-size: 13px;
+        padding: 0;
+        transition: all .1s ease;
+        vertical-align: middle;
+
+        svg {
+            vertical-align: top;
+        }
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .playback-speed__btn--decrease-speed,
+    .playback-speed__btn--increase-speed {
+        opacity: .5;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    /**
+     * Popup menu
+     *
+     * 1. Pump up specificity to override default clappr styles.
+     */
+    .playback-speed__menu[class] { /* [1] */
+        background: rgba(#000, .65);
+        display: none;
+        width: 80px;
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+
+        a {
+            color: rgba(#fff, .55);
+            display: block;
+            font-size: 12px;
+            line-height: 1;
+            text-align: left;
+            padding: 8px 10px;
+            text-decoration: none;
+
+            &:hover {
+                background: rgba(#000, .4);
+                color: #fff;
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+  <title>Demo</title>
+  <style type="text/css">
+    #player {
+      position: relative;
+      display: block;
+      max-width: 640px;
+    }
+
+    #player:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    #player [data-player] {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      height: 100% !important;
+      width: 100% !important;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="player"></div>
+
+<script type="text/javascript" charset="utf-8"
+        src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script>
+  window.onload = function () {
+    window.playerInstance = new Clappr.Player({
+      source: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+      poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/512px-HelloWorld.svg.png",
+      parentId: "#player",
+      hideMediaControl: false,
+      autoPlay: true,
+      mute: true,
+      plugins: [PlaybackSpeedPlugin],
+      playbackSpeedPluginConfig: {
+        playbackSpeeds: [
+          {value: 0.25, label: '0.25x'},
+          {value: 0.5, label: '0.5x'},
+          {value: 0.75, label: '0.75x'},
+          {value: 1.0, label: 'Normal'},
+          {value: 1.5, label: '1.5x'},
+          {value: 2, label: '2x'},
+          {value: 3, label: '3x'},
+        ],
+      }
+    });
+  };
+</script>
+</body>
+</html>

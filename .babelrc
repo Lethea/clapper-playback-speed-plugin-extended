@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env"]
+  ],
+  "ignore": [
+    "node_modules",
+    "src/assets/*"
+  ],
+  "plugins": [
+    "add-module-exports",
+    ["transform-class-properties", { "spec": true }]
+  ]
+}

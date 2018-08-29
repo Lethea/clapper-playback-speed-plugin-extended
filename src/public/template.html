@@ -1,0 +1,20 @@
+<div class="playback-speed__controls">
+  <button class="playback-speed__btn playback-speed__btn--decrease-speed" data-playback-speed-decrease>
+    <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13 7H1" stroke="#878487" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <button class="playback-speed__btn playback-speed__current" data-playback-speed-menu><%= currentSpeed %></button>
+  <button class="playback-speed__btn playback-speed__btn--increase-speed" data-playback-speed-increase>
+    <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke="currentColor" stroke-width="2">
+        <path d="M7 1v12M13 7H1"/>
+      </g>
+    </svg>
+  </button>
+</div>
+<div class="playback-speed__menu">
+  <% for (var i = 0; i < speeds.length; i++) { %>
+    <a href="#" data-playback-speed-value="<%= speeds[i].value %>"><%= speeds[i].label %></a>
+  <% }; %>
+</div>
