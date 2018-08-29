@@ -11,9 +11,18 @@ Plugin for [Clappr](https://github.com/clappr/clappr)
 yarn install
 yarn dev
 ```
+## Build 
+```sh
+yarn build
+```
 
 ## Usage
+You can take the js file from dist folder directly or build and copy the file
+
 ```
+<script src="clappr.js"></script>
+<script src="playback.js"></script>
+<script>
 new Clappr.Player({
   source: "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
   poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/512px-HelloWorld.svg.png",
@@ -32,6 +41,7 @@ new Clappr.Player({
           ],
         }
 });
+</script>
 ```
 
 ##Sample Image
