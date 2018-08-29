@@ -4,11 +4,11 @@
     "clappr",
     "plugin"
   ],
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:Lethea/clapper-playback-speed-plugin-extended.git"
+    "url": "git+ssh://git@github.com/Lethea/clapper-playback-speed-plugin-extended.git"
   },
   "license": "MIT",
   "contributors": [
