@@ -1,10 +1,10 @@
 {
-  "name": "clappr-playback-speed",
+  "name": "clapper-playback-speed-plugin-extended",
   "keywords": [
     "clappr",
     "plugin"
   ],
-  "version": "1.1.0",
+  "version": "1.3.0",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "license": "MIT",
   "contributors": [
-    "Ivan Križnar <ivan@simplified.me>"
+    "Emre Karataşoğlu <emre.karatasoglu@hotmail.com>"
   ],
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
