@@ -19,7 +19,7 @@
     "build": "webpack -p --progress --mode production --config webpack.config.build.js"
   },
   "dependencies": {
-    "clappr": "^0.2.91",
+    "clappr": "^0.3.6",
     "clappr-zepto": "^0.0.7",
     "mousetrap": "^1.6.1"
   },
